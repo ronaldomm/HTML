@@ -1,0 +1,59 @@
+<h1>Projeto</h1>
+<ul class="tree">
+    <ul>
+        <li>
+            Backend
+            <li>
+                <div id="minhadiv">
+                App
+            <ul>
+                <li>produto.js</li>
+                <li>usuario.js</li>
+                <li>venda.js</li>
+            </ul>
+        </li>
+</div>
+<button type="button" onclick="Mudarestado('minhadiv')"> Mostar / Esconder</button>
+<li>
+    config
+    <div id="minhadivv">
+            <ul>
+                <li>banco.js</li>
+                <li>rotas.js</li>
+                <li>servidor.js</li>
+            </ul>
+        </li>
+    </li>
+</ul>
+</div>
+<button type="button" onclick="Mudarestado('minhadivv')"> Mostar / Esconder</button>
+<li>
+    frontend
+    <div id="minhadiiv">
+</div>
+<button type="button" onclick="Mudarestado('minhadiiv')"> Mostar / Esconder</button>
+<ul>
+    <li>
+        public
+        <div id="div">
+        <ul>
+                <li>app.css</li>
+                <li>app.js</li>
+                <li>index.js</li>
+            </ul>
+        </li>
+    </ul>
+</li>
+</div>
+<button type="buton" onclick="Mudarestado('div')"> Mostrar / Esconder </button>
+<link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css">
+<script>
+    //codigo js aqui,
+    function Mudarestado(el) {
+        var display = document.getElementById(el).style.display;
+        if(display == "none")
+            document.getElementById(el).style.display = 'block';
+        else
+            document.getElementById(el).style.display = 'none';
+    }
+</script>
